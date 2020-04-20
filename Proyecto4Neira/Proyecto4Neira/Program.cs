@@ -6,7 +6,7 @@ namespace Proyecto4Neira
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Cuality /n
         }
     }
 }
