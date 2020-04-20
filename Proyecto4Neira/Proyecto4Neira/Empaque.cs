@@ -34,7 +34,7 @@ namespace Proyecto4Neira
                     memory = 500;
                 }
             }
-            partssent = rdn.Next(95, partsgiven);
+            partssent = rdn.Next(80, partsgiven);
             memory -= partssent;
             if (memory <= 0)
             {
@@ -53,7 +53,9 @@ namespace Proyecto4Neira
                     memory = 500;
                 }
             }
-            cuality += partssent / partsgiven;
+            double partssent2 = Convert.ToDouble(partssent);
+            double partsgiven2 = Convert.ToDouble(partsgiven);
+            cuality += (partssent2 / partsgiven2) * 100;
             partsdelivered += a;
             partsout = partsgiven - partssent;
         }
@@ -61,9 +63,13 @@ namespace Proyecto4Neira
         {
             return cuality / n;
         }
-        public void InfoEmp()
+        public int Delivered()
         {
-            Console.WriteLine("Delivered succesfully= {0}, Not used= {1}", partssent, partsout);
+            return partsdelivered;
+        }
+        public void InfoEmp(int a)
+        {
+            Console.WriteLine("Machine {3}:, Packed= {2}, Delivered succesfully= {0}, Not used= {1}, Memory= {4}", partssent, partsout,a,code,memory);
         }
     }
 }

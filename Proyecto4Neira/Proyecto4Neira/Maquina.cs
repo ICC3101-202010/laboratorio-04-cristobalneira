@@ -7,19 +7,19 @@ namespace Proyecto4Neira
         protected int memory { get; set; }
         protected string status { get; set; }
         protected int hour { get; set; }
-        protected void TurnOn()
+        public void TurnOn()
         {
             Console.WriteLine("Machine {0} Turned On", code);
             status = "On";
         }
-        protected void TurnOff()
+        public void TurnOff()
         {
             Console.WriteLine("Machine {0} Turned Off", code);
             status = "Off";
         }
-        protected void Reboot()
+        public void Reboot()
         {
-            Console.WriteLine("No more memory!, machine {0} is rebooting", code);
+            Console.WriteLine("Machine {0} is rebooting, there is no more memory left!", code);
             status = "Reboot";
         }
     }

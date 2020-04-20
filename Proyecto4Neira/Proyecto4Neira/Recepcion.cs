@@ -9,11 +9,12 @@ namespace Proyecto4Neira
         private double cuality;
         public Recepcion()
         {
+            cuality = 0;
             memory = 500;
             code = 00100;
             status = "Off";
         }
-        public int SendAlm()
+        public void Recieve()
         {
             int partsgiven = rdn.Next(100, 110);
             memory -= partsout;
@@ -52,19 +53,24 @@ namespace Proyecto4Neira
                     memory = 500;
                 }
             }
-            cuality += partssent/partsgiven;
-
+            double partssent2 = Convert.ToDouble(partssent);
+            double partsgiven2 = Convert.ToDouble(partsgiven);
+            cuality += (partssent2/partsgiven2)*100;
             partsout = partsgiven - partssent;
 
+        }
+        public int SendAlm()
+        {
             return partssent;
         }
+
         public double Cuality(int n)
         {
             return cuality / n;
         }
         public void InfoR()
         {
-            Console.WriteLine("Machine {2}: Sent= {0}, Not used= {1}", partssent, partsout,code);
+            Console.WriteLine("Machine {2}: Recieved= {3}, Sent= {0}, Not used= {1}, Memory= {4}", partssent, partsout,code,partssent + partsout, memory);
         }
     }
 }
