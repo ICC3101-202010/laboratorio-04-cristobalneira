@@ -13,7 +13,7 @@ namespace Proyecto4Neira
             code = 4;
             status = "Off";
         }
-        public int Verify(int a,bool b)
+        public void Verify(int a,bool b)
         {
             int partsgiven = a;
             memory -= partsout;
@@ -57,7 +57,6 @@ namespace Proyecto4Neira
 
             partsout = partsgiven - partssent;
 
-            return partssent;
         }
         public int SendPack()
         {

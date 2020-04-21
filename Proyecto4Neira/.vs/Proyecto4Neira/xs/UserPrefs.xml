@@ -1,20 +1,20 @@
 ﻿<Properties StartupConfiguration="{EEDB789E-2D17-4025-AAF0-C803B55D9DB9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Proyecto4Neira/Recepcion.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Proyecto4Neira/MaquinaCentral.cs">
     <Files>
-      <File FileName="Proyecto4Neira/Program.cs" Line="67" Column="14" />
-      <File FileName="Proyecto4Neira/Recepcion.cs" Line="17" Column="1" />
-      <File FileName="Proyecto4Neira/Almacenamiento.cs" Line="53" Column="4" />
-      <File FileName="Proyecto4Neira/Ensamblaje.cs" Line="54" Column="12" />
-      <File FileName="Proyecto4Neira/Verificacion.cs" Line="51" Column="12" />
-      <File FileName="Proyecto4Neira/Empaque.cs" Line="45" Column="11" />
-      <File FileName="Proyecto4Neira/Maquina.cs" Line="38" Column="1" />
+      <File FileName="Proyecto4Neira/Program.cs" Line="46" Column="35" />
+      <File FileName="Proyecto4Neira/Recepcion.cs" Line="67" Column="1" />
+      <File FileName="Proyecto4Neira/Almacenamiento.cs" Line="4" Column="47" />
+      <File FileName="Proyecto4Neira/Ensamblaje.cs" Line="70" Column="28" />
+      <File FileName="Proyecto4Neira/Verificacion.cs" Line="16" Column="41" />
+      <File FileName="Proyecto4Neira/Empaque.cs" Line="12" Column="10" />
+      <File FileName="Proyecto4Neira/MaquinaCentral.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Proyecto4Neira" expanded="True">
             <Node name="Proyecto4Neira" expanded="True">
-              <Node name="Recepcion.cs" selected="True" />
+              <Node name="MaquinaCentral.cs" selected="True" />
             </Node>
           </Node>
         </State>

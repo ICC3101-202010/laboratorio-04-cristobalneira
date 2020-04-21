@@ -43,7 +43,7 @@ namespace Proyecto4Neira
 
 
                         en.Ensamble(ens,auto);
-                        en.InfoR(ens);
+                        en.InfoEns(ens);
                         int verf = en.SendVerf();
 
                         v.Verify(verf,auto);
@@ -97,7 +97,7 @@ namespace Proyecto4Neira
 
 
                         en.Ensamble(ens, auto);
-                        en.InfoR(ens);
+                        en.InfoEns(ens);
                         int verf = en.SendVerf();
 
                         v.Verify(verf, auto);

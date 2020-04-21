@@ -13,7 +13,7 @@ namespace Proyecto4Neira
             code = 3;
             status = "Off";
         }
-        public int Ensamble(int a,bool b)
+        public void Ensamble(int a,bool b)
         {
 
             int partsgiven = a;
@@ -58,7 +58,6 @@ namespace Proyecto4Neira
 
             partsout = partsgiven - partssent;
 
-            return partssent;
         }
         public int SendVerf()
         {
@@ -68,7 +67,7 @@ namespace Proyecto4Neira
         {
             return cuality / n;
         }
-        public void InfoR(int a)
+        public void InfoEns(int a)
         {
             Console.WriteLine("Machine {3}: Ensambled= {2}, Sent= {0}, Not used= {1}, Memory= {4}", partssent, partsout,a,code,memory);
         }
