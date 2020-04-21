@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Proyecto4Neira
 {
-    public class Ensamblaje:Maquina
+    public class Ensamblaje:MaquinaCentral
     {
         Random rdn = new Random();
         private int partssent;
@@ -9,11 +9,11 @@ namespace Proyecto4Neira
         private double cuality;
         public Ensamblaje()
         {
-            memory = 500;
-            code = 00300;
+            memory = 600;
+            code = 3;
             status = "Off";
         }
-        public int Ensamble(int a)
+        public int Ensamble(int a,bool b)
         {
 
             int partsgiven = a;
@@ -23,33 +23,33 @@ namespace Proyecto4Neira
                 if (memory <= -1)
                 {
                     int memorydiff = memory * (-1);
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
-                    memory = 500 - memorydiff;
+                    memory = 600 - memorydiff;
                 }
                 else
                 {
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
-                    memory = 500;
+                    memory = 600;
                 }
             }
-            partssent = rdn.Next(87, partsgiven);
+            partssent = rdn.Next(70, partsgiven);
             memory -= partssent;
             if (memory <= 0)
             {
                 if (memory <= -1)
                 {
                     int memorydiff = memory * (-1);
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
-                    memory = 500 - memorydiff;
+                    memory = 600 - memorydiff;
                 }
                 else
                 {
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
-                    memory = 500;
+                    memory = 600;
                 }
             }
             double partssent2 = Convert.ToDouble(partssent);

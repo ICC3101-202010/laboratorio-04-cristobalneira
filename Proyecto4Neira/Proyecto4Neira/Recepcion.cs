@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Proyecto4Neira
 {
-    public class Recepcion : Maquina
+    public class Recepcion : MaquinaCentral
     {
         Random rdn = new Random();
         private int partssent;
@@ -10,11 +10,12 @@ namespace Proyecto4Neira
         public Recepcion()
         {
             cuality = 0;
-            memory = 500;
-            code = 00100;
+            memory = 600;
+            code = 1;
             status = "Off";
         }
-        public void Recieve()
+
+        public void Recieve(bool b)
         {
             int partsgiven = rdn.Next(100, 110);
             memory -= partsout;
@@ -23,34 +24,34 @@ namespace Proyecto4Neira
                 if (memory <= -1)
                 {
                     int memorydiff = memory * (-1);
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
-                    memory = 500-memorydiff;
+                    memory = 600-memorydiff;
                 }
                 else
                 {
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
-                    memory = 500;
+                    memory = 600;
                 }
             }
-            partssent = rdn.Next(99, partsgiven);
+            partssent = rdn.Next(90, partsgiven);
             memory -= partssent;
             if (memory <= 0)
             {
                 if (memory <= -1)
                 {
                     int memorydiff = memory * (-1);
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
 
-                    memory = 500 - memorydiff;
+                    memory = 600 - memorydiff;
                 }
                 else
                 {
-                    Reboot();
+                    Reboot(b);
                     TurnOn();
-                    memory = 500;
+                    memory = 600;
                 }
             }
             double partssent2 = Convert.ToDouble(partssent);
@@ -63,7 +64,6 @@ namespace Proyecto4Neira
         {
             return partssent;
         }
-
         public double Cuality(int n)
         {
             return cuality / n;

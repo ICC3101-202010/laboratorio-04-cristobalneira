@@ -37,7 +37,7 @@
     <Compile Include="Ensamblaje.cs" />
     <Compile Include="Verificacion.cs" />
     <Compile Include="Empaque.cs" />
-    <Compile Include="Maquina.cs" />
+    <Compile Include="MaquinaCentral.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

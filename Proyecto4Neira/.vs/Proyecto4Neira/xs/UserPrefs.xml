@@ -1,27 +1,27 @@
 ﻿<Properties StartupConfiguration="{EEDB789E-2D17-4025-AAF0-C803B55D9DB9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Proyecto4Neira/Maquina.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Proyecto4Neira/Recepcion.cs">
     <Files>
-      <File FileName="Proyecto4Neira/Program.cs" Line="10" Column="27" />
-      <File FileName="Proyecto4Neira/Recepcion.cs" Line="70" Column="2" />
-      <File FileName="Proyecto4Neira/Almacenamiento.cs" Line="41" Column="18" />
-      <File FileName="Proyecto4Neira/Ensamblaje.cs" Line="37" Column="36" />
-      <File FileName="Proyecto4Neira/Verificacion.cs" Line="36" Column="36" />
-      <File FileName="Proyecto4Neira/Empaque.cs" Line="37" Column="36" />
-      <File FileName="Proyecto4Neira/Maquina.cs" Line="1" Column="1" />
+      <File FileName="Proyecto4Neira/Program.cs" Line="67" Column="14" />
+      <File FileName="Proyecto4Neira/Recepcion.cs" Line="17" Column="1" />
+      <File FileName="Proyecto4Neira/Almacenamiento.cs" Line="53" Column="4" />
+      <File FileName="Proyecto4Neira/Ensamblaje.cs" Line="54" Column="12" />
+      <File FileName="Proyecto4Neira/Verificacion.cs" Line="51" Column="12" />
+      <File FileName="Proyecto4Neira/Empaque.cs" Line="45" Column="11" />
+      <File FileName="Proyecto4Neira/Maquina.cs" Line="38" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Proyecto4Neira" expanded="True">
             <Node name="Proyecto4Neira" expanded="True">
-              <Node name="Maquina.cs" selected="True" />
+              <Node name="Recepcion.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Proyecto4Neira FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Proyecto4Neira PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
